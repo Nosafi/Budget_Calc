@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./assets/css/style.css" rel="stylesheet" />
+
+    <title>Budget calc</title>
+  </head>
+
+  <body>
+    <div class="header_navig">
+      <div class="prev_month"></div>
+      <div class="curr_month"></div>
+      <div class="next_month"></div>
+    </div>
+
+    <hr />
+
+    <div class="wrapper">
+      <div>
+        <div id="calendar"></div>
+
+        <div class="hidden_windows">
+          For comparison drop data here
+          <textarea class="little_clone" readonly="readonly"></textarea>
+        </div>
+      </div>
+
+      <div class="main_workspace">
+        <div class="data_tv_wrapper">
+          <textarea class="data_tv" readonly="readonly"> </textarea>
+        </div>
+        <div style="height: 80%; width: 48%;">
+          <button
+            style="margin-left: 70px; margin-top: 65px;"
+            class="show_modal"
+          >
+            Add new data
+          </button>
+          <button
+            style="margin-left: 20px; margin-top: 65px;"
+            class="show_modal"
+          >
+            Edit data
+          </button>
+          <div style="height: 340px; width: 380px; margin-left: 70px; margin-top: 100px;">
+            <div style="height: 20px; text-align: center;">
+              <label class="full_prise_spend"></label>
+            </div>
+            <div class="gist_wrapper">
+              <div class="gist _gist_1">
+                Food
+              </div>
+              <div class="gist _gist_2">
+                Clothes
+              </div>
+              <div class="gist _gist_3">
+                Fun
+              </div>
+              <div class="gist _gist_4">
+                Account
+              </div>
+              <div class="gist _gist_5">
+                Other
+              </div>
+            </div>
+            <div class="gist_labels">
+              <label class="gist_label"></label>
+              <label class="gist_label"></label>
+              <label class="gist_label"></label>
+              <label class="gist_label"></label>
+              <label class="gist_label"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal">
+      <div class="modal_content">
+        <span class="close_modal_window">x</span>
+        <div class="edit_data_spce">
+          <span class="edit_title">
+            <h2>New data on <label class="curr_data_lab"></label>:</h2>
+          </span>
+          <div class="edit_form_wrapper">
+            <form class="edit_form">
+              Income:
+              <input class="new_income" type="text" value="0" /><br /><br />
+              Consumption: <br />
+              <div class="consumption_wrapper">
+                <div style="line-height: 27px;">
+                  Food: <br />
+                  Clothes: <br />
+                  Fun: <br />
+                  Account: <br />
+                  Other:
+                </div>
+                <div style="margin-left: 20px;">
+                  <input class="new_cons" type="text" value="0" /><br />
+                  <input class="new_cons" type="text" value="0" /><br />
+                  <input class="new_cons" type="text" value="0" /><br />
+                  <input class="new_cons" type="text" value="0" /><br />
+                  <input class="new_cons" type="text" value="0" />
+                </div>
+              </div>
+              <br />
+            </form>
+          </div>
+
+          <span class="setdata_wrapper"></span>
+          <span class="deldata_wrapper"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal">
+      <div class="modal_content">
+        <span class="close_modal_window">x</span>
+        <div class="edit_data_spce">
+          <span class="edit_title">
+            <h2>Edit data on <label class="curr_data_lab"></label>:</h2>
+          </span>
+          <div class="edit_form_wrapper">
+            <form class="edit_form">
+              Income:
+              <label style="font-weight: 700;" class="data_for_edit"
+                >Test
+              </label>
+              <select class="mark_select">
+                <option value="0">+</option>
+                <option value="1">-</option>
+              </select>
+              <input class="edit_income" type="text" value="0" /><br /><br />
+              Consumption: <br />
+              <div class="consumption_wrapper">
+                <div style="line-height: 27px;">
+                  Food: <br />
+                  Clothes: <br />
+                  Fun: <br />
+                  Account: <br />
+                  Other:
+                </div>
+                <div
+                  style="line-height: 27px; margin-left: 5px; font-weight: 700;"
+                >
+                  <label class="data_for_edit">Test </label> <br />
+                  <label class="data_for_edit">Test </label> <br />
+                  <label class="data_for_edit">Test </label> <br />
+                  <label class="data_for_edit">Test </label> <br />
+                  <label class="data_for_edit">Test </label>
+                </div>
+                <div
+                  style="line-height: 27px; margin-left: 10px; font-weight: 700;"
+                >
+                  <select class="mark_select">
+                    <option value="0">+</option>
+                    <option value="1">-</option>
+                  </select>
+                  <br />
+                  <select class="mark_select">
+                    <option value="0">+</option>
+                    <option value="1">-</option>
+                  </select>
+                  <br />
+                  <select class="mark_select">
+                    <option value="0">+</option>
+                    <option value="1">-</option>
+                  </select>
+                  <br />
+                  <select class="mark_select">
+                    <option value="0">+</option>
+                    <option value="1">-</option>
+                  </select>
+                  <br />
+                  <select class="mark_select">
+                    <option value="0">+</option>
+                    <option value="1">-</option>
+                  </select>
+                </div>
+                <div style="margin-left: 20px;">
+                  <input class="edit_cons" type="text" value="0" /><br />
+                  <input class="edit_cons" type="text" value="0" /><br />
+                  <input class="edit_cons" type="text" value="0" /><br />
+                  <input class="edit_cons" type="text" value="0" /><br />
+                  <input class="edit_cons" type="text" value="0" />
+                </div>
+              </div>
+              <br />
+            </form>
+          </div>
+
+          <span class="editdata_wrapper">
+            <button class="editdata_btn">Set new data</button>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/interface.js"></script>
+    <script src="./assets/js/dragndrop.js"></script>
+    <script src="./assets/js/period_result.js"></script>
+  </body>
+</html>
