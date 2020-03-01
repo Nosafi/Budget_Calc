@@ -1,18 +1,38 @@
+body {
+  background-color: #a4dada;
+}
+
+button {
+  background-color: transparent;
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 40px #f137a6 inset, 0 0 0 0 #f137a6;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 2px;
+  transition: 0.15s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0 0 10px 0 #f137a6 inset, 0 0 10px 4px #f137a6;
+  color: #000000;
+}
+
+._main_title_of_page {
+  text-shadow: 1px 1px white, 2px 2px #777;
+  color: #333;
+}
+
 ._yellow {
-  background-color: #F8F4BA;
+  background-color: #f8f4ba;
 }
 
 ._active {
   background-color: blue;
   color: white;
-}
-
-._green {
-  background-color: #a6ffb0;
-}
-
-._red {
-  background-color: #ffa6a6;
 }
 
 .curr_month {
@@ -47,6 +67,7 @@ table {
   font-size: 25px;
   background-color: white;
   user-select: none;
+  background-color: #8bc1c1;
 }
 
 td,
@@ -67,6 +88,7 @@ th {
 }
 
 .hidden_windows {
+  background-color: #8bc1c1;
   margin: 50px 50px;
   width: 341px;
   height: 383px;
@@ -74,7 +96,8 @@ th {
   overflow: hidden;
 }
 
-.little_clone{
+.little_clone {
+  background-color: transparent;
   font-size: 20px;
   width: 341px;
   height: 363px;
@@ -99,6 +122,8 @@ th {
 }
 
 .data_tv {
+  font-family: 'Raleway';
+  background-color: transparent;
   padding: 10px 15px;
   font-size: 30px;
   font-weight: 700;
@@ -107,7 +132,15 @@ th {
   resize: none;
   outline: none;
   border-radius: 10px;
-  user-select: none;  
+  user-select: none;
+}
+
+._green {
+  background-color: #a6ffb0;
+}
+
+._red {
+  background-color: #ffa6a6;
 }
 
 .edit_title {
@@ -192,6 +225,7 @@ th {
 }
 
 .gist_wrapper {
+  background-color: #8bc1c1;
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
@@ -209,23 +243,23 @@ th {
 
 ._gist_1 {
   height: 0px;
-  background-color: #A55CA5;
+  background-color: #a55ca5;
 }
 ._gist_2 {
   height: 0px;
-  background-color: #67B6C7;
+  background-color: #67b6c7;
 }
 ._gist_3 {
   height: 0px;
-  background-color: #BCCD7A;
+  background-color: #bccd7a;
 }
 ._gist_4 {
   height: 0px;
-  background-color: #EB9743;
+  background-color: #eb9743;
 }
 ._gist_5 {
   height: 0px;
-  background-color: #FF6867;
+  background-color: #ff6867;
 }
 
 .gist_labels {
